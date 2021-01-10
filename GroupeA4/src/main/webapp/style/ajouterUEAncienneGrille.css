@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+h1{
+	text-align:center;
+}
+
+.selector {
+  margin-bottom: 2%;
+}
+
+.selector label {
+    margin-right: 1%;
+    text-transform: uppercase;
+}
+
+.selector select {
+  margin-right: 4%;
+  min-width: 10%;
+}
+
+.selector .button {
+  border-radius : 1em;
+  padding: 0.2em 2em;
+  text-transform: uppercase;
+  background: white;
+  border: 0.1em solid black;
+  margin-right: 3em;
+}
+
+.selector .button:hover {
+  cursor:pointer;
+  background:black;
+  color:white;
+  border-radius : 1em;
+  padding: 0.2em 2em;
+  text-transform: uppercase;
+  border: 0.1em solid black;
+  margin-right: 3em;
+}

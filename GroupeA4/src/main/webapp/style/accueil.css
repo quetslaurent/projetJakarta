@@ -1,0 +1,77 @@
+@charset "ISO-8859-1";
+
+.title {
+  text-align : center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+.title img {
+  max-width: 10em;
+  position: absolute;
+  top: 2em;
+  right: 5em;
+}
+
+.selector {
+  margin-bottom: 2%;
+}
+
+.selector label {
+    margin-right: 1%;
+    text-transform: uppercase;
+}
+
+.selector select {
+  margin-right: 4%;
+  min-width: 10%;
+}
+
+.selector .button {
+  border-radius : 1em;
+  padding: 0.2em 2em;
+  text-transform: uppercase;
+  background: white;
+  border: 0.1em solid black;
+  margin-right: 3em;
+}
+
+.selector .button:hover {
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #000;
+}
+ 
+table th,
+table td {
+    padding: 5px;
+    text-align: left;
+    font-family: Arial, Verdana, sans-serif;
+    border: 1px solid #000;
+    border-bottom:0;
+}
+ 
+ 
+table th {
+    background-color: #ebebeb;
+    color: #000000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+.apropos {
+	text-align:center;
+}
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:jsf="http://xmlns.jcp.org/jsf"
+    xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Accueil</title>
+        <link type="text/css" rel="stylesheet" href="style/accueil.css" />
+    </h:head>
+    <h:body>
+    <div class="title">
+      <h1>Accueil</h1>
+      <img src="logo.jpg"></img>
+    </div>
+   
+ 	<div class="selector">
+   	 	<h:form>
+	   	 	<h:outputLabel>Section: </h:outputLabel>
+			 <select  name="zone_id">
+		        <ui:repeat value="#{ueControl.selectSectionsFromUes()}" var="section">
+		            <option value="#{section}">#{section}</option>
+		        </ui:repeat>
+		     </select> 	
+	   	 	<h:outputLabel>Bloc: </h:outputLabel>
+	   	 	
+	   	 	<select  name="zone_id">
+		        <ui:repeat value="#{ueControl.selectBlocsFromUes()}" var="bloc">
+		            <option value="#{bloc}">#{bloc}</option>
+		        </ui:repeat>
+		     </select> 	
+			<!--  Confirme via JSF -->
+			<!-- <h:commandButton class="button" value="Valider" type="submit" action="#{ficheEtudiantControl.doNext()}"/> -->
+			<h:commandButton class="button" value="Valider" type="submit" action="ficheEtudiant.xhtml"/>
+		<!-- 	<h:commandButton class="button" value="Importer les données depuis excel " action ="#{excelControl.openFile()}"/> -->
+   	 		<!-- <h:inputFile name="file_id"></h:inputFile> 
+   	 		<p:fileUpload mode="simple"></p:fileUpload>
+   	 		<h:commandButton value = "Importer" action = "#{excelControl.upload()}"></h:commandButton>
+   	 		-->
+   	 	</h:form>
+   	 
+   	 </div>
+   	 
+ 	 <div class="table">
+ 		<h:dataTable value = "" var = ""
+		    cellpadding="0" 
+		    border="0"
+		    rowClasses="odd,even"
+		    columnClasses="matricule,nom,nom,anAc">
+   
+		   <h:column>    				
+		      <f:facet name = "header">Matricule</f:facet>    				
+		      a
+		   </h:column>
+		   
+		   <h:column>
+		      <f:facet name = "header">Nom</f:facet>
+		      a
+		   </h:column>
+		   
+		   <h:column>
+		      <f:facet name = "header">Prenom</f:facet>
+		      a
+		   </h:column>
+		   
+		   <h:column>
+		      <f:facet name = "header">Annee Academique</f:facet>
+		      a
+		   </h:column>
+		</h:dataTable>
+   	 </div>
+   	 
+   	 <div class="apropos selector">
+   	 	<h:form>
+   	 		<br/><h:commandButton class="button" value="A propos" type="submit" action="aPropos.xhtml"/>
+   	 	</h:form>
+   	 </div>
+   	 
+    </h:body>
+</html>
